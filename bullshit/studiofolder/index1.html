@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]> <html lang="en" class="ie6" > <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7" > <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8" > <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9" > <![endif]-->
+<!--[if (gt IE 9)|!(IE)]>
+    <!--> <html lang="en" class="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1,maximum-scale=1">
+
+    <title>mhwebui</title>
+
+    
+        <link rel="shortcut icon" href="favicon.png">
+    
+
+    
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+
+    
+        <link href="main.css" rel="stylesheet">
+    
+</head>
+
+	<body>
+
+		
+
+		
+
+		
+
+		
+
+        <!---App html -->
+
+        <div class="ui two column grid">
+            <div class="column">
+                <h4 id="info">Makehuman Web UI</h4>
+                <div id="react-ui"></div>
+            </div>
+            <div class="column">
+                <div id="container"></div>
+            </div>
+        </div>
+        <div id="progress-bar"></div>
+
+        <!---Webpack bundles inserted here -->
+		
+		<script src="modernizr-bundle.js"></script>
+		
+		<script src="common.bundle.min.js?cacheBust=919118f3f2455f3fc101"></script>
+		
+		<script src="vendor.bundle.min.js?cacheBust=919118f3f2455f3fc101"></script>
+		
+		<script src="main.bundle.min.js?cacheBust=919118f3f2455f3fc101"></script>
+		
+		<script src="human.bundle.min.js?cacheBust=919118f3f2455f3fc101"></script>
+		
+
+		
+	</body>
+
+    <!---Init app -->
+	<script>
+	var app = new main.main.App()
+	app.init();
+	app.animate();
+	</script>
+
+    <!---Google analystics -->
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      
+        ga('create', 'UA-51809277-3', 'auto');
+        
+      
+        ga('send', 'pageview');
+      
+    </script>
+    
+
+</html>
+
