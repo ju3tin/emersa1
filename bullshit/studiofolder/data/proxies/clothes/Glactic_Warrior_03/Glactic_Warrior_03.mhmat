@@ -1,0 +1,21 @@
+# This is a clothes file for MakeHuman Community, exported by MakeClothes 2
+#
+# author: unknown
+# license: CC0
+#
+name Glactic_Warrior_03 material
+
+// Color shading attributes
+diffuseColor  0.8000 0.8000 0.8000
+specularColor  0.7500 0.7500 0.7500
+shininess 0.7500
+opacity 1
+
+// Textures
+diffuseTexture Glactic_Warrior_03.png
+// Settings
+
+transparent False
+alphaToCoverage True
+backfaceCull False
+depthless False
